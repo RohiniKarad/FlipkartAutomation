@@ -31,7 +31,7 @@ public class VerifyTopOfferPage {
 		log.loginfk();
 	home=new Homepage(driver);
 	home.topoffer();
-	top=new Topoffers(driver);
+	//top=new Topoffers(driver);
 		
 	}
 	@Test

@@ -1,33 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-17T15:44:27 IST" name="FlipkartSuite" finished-at="2022-09-17T15:44:45 IST" duration-ms="18381">
+  <suite started-at="2022-09-23T14:11:28 IST" name="FlipkartSuite" finished-at="2022-09-23T14:12:58 IST" duration-ms="89996">
     <groups>
     </groups>
-    <test started-at="2022-09-17T15:44:27 IST" name="Test" finished-at="2022-09-17T15:44:45 IST" duration-ms="18381">
-      <class name="testPack.VerifyHomepage">
-        <test-method is-config="true" signature="browserlounch()[pri:0, instance:testPack.VerifyHomepage@7c729a55]" started-at="2022-09-17T15:44:27 IST" name="browserlounch" finished-at="2022-09-17T15:44:38 IST" duration-ms="10510" status="PASS">
+    <test started-at="2022-09-23T14:11:28 IST" name="Test" finished-at="2022-09-23T14:12:58 IST" duration-ms="89996">
+      <class name="testPack.VerifyTopOfferPage">
+        <test-method is-config="true" signature="lounching_browser()[pri:0, instance:testPack.VerifyTopOfferPage@7c729a55]" started-at="2022-09-23T14:11:28 IST" name="lounching_browser" finished-at="2022-09-23T14:11:53 IST" duration-ms="25261" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserlounch -->
-        <test-method is-config="true" signature="lounchApp()[pri:0, instance:testPack.VerifyHomepage@7c729a55]" started-at="2022-09-17T15:44:38 IST" name="lounchApp" finished-at="2022-09-17T15:44:45 IST" duration-ms="7340" status="PASS">
+        </test-method> <!-- lounching_browser -->
+        <test-method is-config="true" signature="login_app()[pri:0, instance:testPack.VerifyTopOfferPage@7c729a55]" started-at="2022-09-23T14:11:53 IST" name="login_app" finished-at="2022-09-23T14:12:54 IST" duration-ms="61217" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-PN7TIBRF', ip: '192.168.1.12', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc17a36b86de6925f8eab90ef7ea8c8, clickElement {id=8d7cced3-547e-4b00-98ff-52d92fdbe819}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\91805\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65145/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9cc17a36b86de6925f8eab90ef7ea8c8)] -> xpath: //img[@alt='Top Offers']]
+Session ID: 9cc17a36b86de6925f8eab90ef7ea8c8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-PN7TIBRF', ip: '192.168.1.12', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc17a36b86de6925f8eab90ef7ea8c8, clickElement {id=8d7cced3-547e-4b00-98ff-52d92fdbe819}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\91805\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65145/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9cc17a36b86de6925f8eab90ef7ea8c8)] -> xpath: //img[@alt='Top Offers']]
+Session ID: 9cc17a36b86de6925f8eab90ef7ea8c8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at pompack.Homepage.topoffer(Homepage.java:30)
+at testPack.VerifyTopOfferPage.login_app(VerifyTopOfferPage.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lounchApp -->
-        <test-method signature="verifyTitle()[pri:0, instance:testPack.VerifyHomepage@7c729a55]" started-at="2022-09-17T15:44:45 IST" name="verifyTitle" finished-at="2022-09-17T15:44:45 IST" duration-ms="46" status="PASS">
+        </test-method> <!-- login_app -->
+        <test-method signature="verifyTopoffer()[pri:0, instance:testPack.VerifyTopOfferPage@7c729a55]" started-at="2022-09-23T14:12:57 IST" name="verifyTopoffer" finished-at="2022-09-23T14:12:57 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-PN7TIBRF', ip: '192.168.1.12', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc17a36b86de6925f8eab90ef7ea8c8, clickElement {id=8d7cced3-547e-4b00-98ff-52d92fdbe819}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\91805\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65145/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9cc17a36b86de6925f8eab90ef7ea8c8)] -> xpath: //img[@alt='Top Offers']]
+Session ID: 9cc17a36b86de6925f8eab90ef7ea8c8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-PN7TIBRF', ip: '192.168.1.12', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc17a36b86de6925f8eab90ef7ea8c8, clickElement {id=8d7cced3-547e-4b00-98ff-52d92fdbe819}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\91805\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65145/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9cc17a36b86de6925f8eab90ef7ea8c8)] -> xpath: //img[@alt='Top Offers']]
+Session ID: 9cc17a36b86de6925f8eab90ef7ea8c8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at pompack.Homepage.topoffer(Homepage.java:30)
+at testPack.VerifyTopOfferPage.login_app(VerifyTopOfferPage.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="logoutApp()[pri:0, instance:testPack.VerifyHomepage@7c729a55]" started-at="2022-09-17T15:44:45 IST" name="logoutApp" finished-at="2022-09-17T15:44:45 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyTopoffer -->
+        <test-method is-config="true" signature="logout_app()[pri:0, instance:testPack.VerifyTopOfferPage@7c729a55]" started-at="2022-09-23T14:12:58 IST" name="logout_app" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663922578043" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutApp -->
-        <test-method is-config="true" signature="closingbrowser()[pri:0, instance:testPack.VerifyHomepage@7c729a55]" started-at="2022-09-17T15:44:45 IST" name="closingbrowser" finished-at="2022-09-17T15:44:45 IST" duration-ms="413" status="PASS">
+        </test-method> <!-- logout_app -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:testPack.VerifyTopOfferPage@7c729a55]" started-at="2022-09-23T14:12:58 IST" name="close_browser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663922578429" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closingbrowser -->
-      </class> <!-- testPack.VerifyHomepage -->
+        </test-method> <!-- close_browser -->
+      </class> <!-- testPack.VerifyTopOfferPage -->
     </test> <!-- Test -->
   </suite> <!-- FlipkartSuite -->
 </testng-results>

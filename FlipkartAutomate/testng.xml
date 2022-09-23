@@ -3,7 +3,7 @@
 <suite name="FlipkartSuite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testPack.VerifyHomepage"/>
+      <class name="testPack.VerifyTopOfferPage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- FlipkartSuite -->

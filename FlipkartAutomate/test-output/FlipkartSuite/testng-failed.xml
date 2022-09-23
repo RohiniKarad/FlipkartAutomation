@@ -3,15 +3,15 @@
 <suite name="Failed suite [FlipkartSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testPack.VerifyHomepage">
+      <class name="testPack.VerifyTopOfferPage">
         <methods>
-          <include name="closingbrowser"/>
-          <include name="verifyTitle"/>
-          <include name="logoutApp"/>
-          <include name="lounchApp"/>
-          <include name="browserlounch"/>
+          <include name="lounching_browser"/>
+          <include name="close_browser"/>
+          <include name="login_app"/>
+          <include name="verifyTopoffer"/>
+          <include name="logout_app"/>
         </methods>
-      </class> <!-- testPack.VerifyHomepage -->
+      </class> <!-- testPack.VerifyTopOfferPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [FlipkartSuite] -->
